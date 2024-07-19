@@ -1,11 +1,13 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const SeeMore = () => {
     let { id } = useParams();
   return (
     <div> 
-        id: {id} SeeMore ... 
+      <Link to="/">Back</Link>
+      <hr/>
+      id: {id}, SeeMore ... 
     </div>
   )
 }
